@@ -1,9 +1,59 @@
-.makernames {
+#logo {
   font-family: 'lobster', cursive;
+  color: #edf0f1;
+  font-size: 30px;
 }
-
+#header {
+  padding: 50px;
+  background-color: #9BC362;
+}
+#glassmuseum {
+  justify-content: center;
+}
 #map {
   width: 100%;
   height: 400px;
   background-color: grey;
+}
+ul {
+  background-color: #525c89;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body {
+    margin: 75px;
+    background-color: #edf0f1;
+    font-family: arial;
+    color: #525c89
+    font-weight: normal;
+    line-height: 1.5;
+}
+footer {
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    background-color: #525c89;
+    line-height: 100px;
+    font-size: 15px;
+}
+.section-medium {
+    background-color: #edf0f1;
+    padding: 3rem 0;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.3125rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+section .column, section .columns {
+    margin-bottom: 1rem;
 }

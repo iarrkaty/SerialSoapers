@@ -2,11 +2,15 @@
 <html>
 <head>
   <link rel="stylesheet" href="scripts/style/style.css">
+  <link rel="stylesheet" href="scripts/style/formstyle.css">
+  <script src="scripts/form.js" type="text/javascript"></script>
 </head>
+<div id="header">
+<div id="logo">Serial Soapers</div>
+</div>
 <body>
   <div id="cheryl"></div>
   <div class="makernames">Cheryl Holloway</div>
-
   <p>
     Bacon ipsum dolor amet filet mignon tenderloin tongue, jowl flank chicken salami sausage pork chop pork belly shankle. Shank pork loin flank cow short loin. Boudin ham hock bresaola pork chop beef tenderloin. Andouille kevin burgdoggen chicken alcatra tail picanha sirloin ham hock.
   </p>
@@ -15,7 +19,33 @@
   <p>
     Bacon ipsum dolor amet filet mignon tenderloin tongue, jowl flank chicken salami sausage pork chop pork belly shankle. Shank pork loin flank cow short loin. Boudin ham hock bresaola pork chop beef tenderloin. Andouille kevin burgdoggen chicken alcatra tail picanha sirloin ham hock.
   </p>
-<div id="contactform">
-  
+  <div class="container">
+  <div class="col-md-5">
+      <div class="form-area">
+          <form role="form">
+          <br style="clear:both">
+                      <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+      				<div class="form-group">
+  						<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+  					</div>
+  					<div class="form-group">
+  						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+  					</div>
+  					<div class="form-group">
+  						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+  					</div>
+  					<div class="form-group">
+  						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+  					</div>
+                      <div class="form-group">
+                      <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                          <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+                      </div>
+          <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+          </form>
+      </div>
+  </div>
+  </div>
 </body>
+<footer>Serial Soapers, Seattle WA</footer>
 </html>
