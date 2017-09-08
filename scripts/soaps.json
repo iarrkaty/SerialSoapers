@@ -1,1 +1,32 @@
-'use strict';
+[
+  {
+    "scent": "peppermint",
+    "img": "peppermintswirl.jpg",
+    "description": "Imagine chistmas being rubbed all over you",
+  },
+  {
+    "scent": "rose",
+    "img": "rose.jpeg",
+    "description": "",
+  },
+{
+    "scent": "citrus",
+    "img": "lemon.jpeg",
+    "description": "",
+},
+{
+  "scent": "almond",
+  "img": "almond.jpeg",
+  "description": "",
+},
+{
+  "scent": "almond",
+  "img": ,
+  "description": "",
+}
+{
+  "scent": "almond",
+  "img": "",
+  "description": "",
+}
+]
