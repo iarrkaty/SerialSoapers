@@ -16,7 +16,19 @@
   </ul>
 </div>
 <body>
+  <form id="form" name='name'>
+  Scent:<br>
+  <input id="scent" type="text" name="search" placeholder="Search..">
+  <br><br>
 
+  <br><br>
+  <input id="submit" type="submit" value="Submit">
+</form>
+<br>
+<script id="results-template" type="text/x-handlebars-template">
+  <div>{{scent}}</div>
+  <div>{{colors}}</div>
+  <div>{{description}}</div>
 </body>
 <footer>Serial Soapers</footer>
 </html>
