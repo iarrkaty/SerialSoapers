@@ -1,5 +1,6 @@
-@ media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
 }
+
 #logo {
   font-family: 'lobster', cursive;
   color: #edf0f1;
@@ -9,6 +10,11 @@
   padding: 50px;
   background-color: #9BC362;
 }
+#navbar {
+  padding: .5em;
+  background-color: #525c89;
+}
+
 #glassmuseum {
   justify-content: center;
 }
@@ -17,14 +23,36 @@
   height: 400px;
   background-color: grey;
 }
-ul {
+
+.wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  border-radius: 3px;
+  min-width: 310px;
+}
+
+#navbar ul {
   background-color: #525c89;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 3px;
+  padding: 0;
+  list-style: none;
+}
+#navbar a {
+  color: #fff;
+  padding: .5em;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+}
+#navbar a:hover {
+  background-color: #422c69;
+  border-radius: 3px;
 }
 body {
-    margin: 75px;
+    margin: 1em;
     background-color: #edf0f1;
     font-family: arial;
     color: #525c89
@@ -47,6 +75,9 @@ footer {
     background-color: #edf0f1;
     padding: 3rem 0;
 }
+.glasspicture {
+  max-width: 100%;
+}
 h3 {
     font-size: 1.5rem;
 }
@@ -58,4 +89,14 @@ h3 {
 }
 section .column, section .columns {
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 340px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper: {
+    width: 100%;
+  }
 }
