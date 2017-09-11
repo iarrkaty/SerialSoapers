@@ -1,0 +1,38 @@
+[
+  {
+    "scent": "peppermint",
+    "img": "peppermintswirl.jpg",
+    "colors": "red",
+    "description": "Imagine chistmas being rubbed all over you"
+  },
+  {
+    "scent": "rose",
+    "img": "rose.jpeg",
+    "colors": "red",
+    "description": "Imagine chistmas being rubbed all over youImagine chistmas being rubbed all over you"
+  },
+  {
+    "scent": "citrus",
+    "img": "lemon.jpeg",
+    "colors": "yellow",
+    "description": "Imagine chistmas being rubbed all over you"
+  },
+  {
+    "scent": "almond",
+    "img": "almond.jpeg",
+    "colors": "yellow",
+    "description": "Imagine chistmas being rubbed all over you"
+  },
+  {
+    "scent": "cherry",
+    "img": "lemon.jpeg",
+    "colors": "red",
+    "description": "Imagine chistmas being rubbed all over you"
+  },
+  {
+    "scent": "lavender",
+    "img": "lemon.jpeg",
+    "colors": "purple",
+    "description": "Imagine chistmas being rubbed all over you"
+  }
+]

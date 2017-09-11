@@ -1,0 +1,102 @@
+@media only screen and (max-width: 640px) {
+}
+
+#logo {
+  font-family: 'lobster', cursive;
+  color: #edf0f1;
+  font-size: 30px;
+}
+#header {
+  padding: 50px;
+  background-color: #9BC362;
+}
+#navbar {
+  padding: .5em;
+  background-color: #525c89;
+}
+
+#glassmuseum {
+  justify-content: center;
+}
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+.wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  border-radius: 3px;
+  min-width: 310px;
+}
+
+#navbar ul {
+  background-color: #525c89;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3px;
+  padding: 0;
+  list-style: none;
+}
+#navbar a {
+  color: #fff;
+  padding: .5em;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+}
+#navbar a:hover {
+  background-color: #422c69;
+  border-radius: 3px;
+}
+body {
+    margin: 1em;
+    background-color: #edf0f1;
+    font-family: arial;
+    color: #525c89
+    font-weight: normal;
+    line-height: 1.5;
+}
+footer {
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    background-color: #525c89;
+    line-height: 100px;
+    font-size: 15px;
+}
+.section-medium {
+    background-color: #edf0f1;
+    padding: 3rem 0;
+}
+.glasspicture {
+  max-width: 100%;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.3125rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+section .column, section .columns {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 340px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper: {
+    width: 100%;
+  }
+}
