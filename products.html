@@ -16,19 +16,32 @@
   </ul>
 </div>
 <body>
-  <form id="form" name='name'>
-  Scent:<br>
-  <input id="scent" type="text" name="search" placeholder="Search..">
-  <br><br>
+  <form id="form" name="name">
+    Scent:<br>
+    <input id="scent" type="text" name="search" placeholder="Search..">
+    <br><br>
 
-  <br><br>
-  <input id="submit" type="submit" value="Submit">
-</form>
-<br>
-<script id="results-template" type="text/x-handlebars-template">
-  <div>{{scent}}</div>
-  <div>{{colors}}</div>
-  <div>{{description}}</div>
+    <br><br>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+  <br>
+  <div>
+    <h2>Results</h2>
+    <div id="results">
+    </div>
+  </div>
+  <script id="results-template" type="text/x-handlebars-template">
+    {{#each this}}
+      <div>{{scent}}</div>
+      <div>{{colors}}</div>
+      <div>{{description}}</div>
+    {{/each}}
+  </script>
+
+  <footer>Serial Soapers</footer>
 </body>
-<footer>Serial Soapers</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript" src="scripts/products.js"></script>
 </html>
