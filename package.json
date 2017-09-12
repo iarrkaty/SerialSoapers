@@ -20,5 +20,6 @@
   "homepage": "https://github.com/iarrkaty/SerialSoapers#readme",
   "dependencies": {
     "express": "^4.15.4"
-  }
+  },
+  "devDependencies": {}
 }
