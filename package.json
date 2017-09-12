@@ -1,8 +1,29 @@
 {
   "name": "SerialSoapers",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "version": "0.1.0",
+  "description": "Handmade Soap",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iarrkaty/SerialSoapers.git"
+  },
+  "keywords": [
+    "soap",
+    "handmade"
+  ],
+  "author": "Katy SanGregory",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iarrkaty/SerialSoapers/issues"
+  },
+  "homepage": "https://github.com/iarrkaty/SerialSoapers#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-request-proxy": "^2.0.0"
+  }
+}
