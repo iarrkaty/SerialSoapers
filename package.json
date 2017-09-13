@@ -1,7 +1,7 @@
 {
   "name": "SerialSoapers",
   "version": "1.0.0",
-  "description": "",
+  "description": "Serial Soapers",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/iarrkaty/SerialSoapers#readme",
   "dependencies": {
+    "body-parser": "^1.18.1",
     "express": "^4.15.4"
   },
   "devDependencies": {}
