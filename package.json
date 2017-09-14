@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/iarrkaty/SerialSoapers#readme",
   "dependencies": {
-    "body-parser": "^1.18.1",
     "express": "^4.15.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "body-parser": "^1.18.1"
+  }
 }
