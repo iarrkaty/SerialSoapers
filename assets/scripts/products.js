@@ -1,6 +1,9 @@
-'use strict';
+
+$(document).ready(function() {
+  'use strict';
 
 var products = {};
+
 
 products.populateFilters = function() {
   $('product').each(function() {
@@ -13,17 +16,27 @@ products.populateFilters = function() {
 products.search = function() {
     let template = $('#results-template').html();
     let resultDiv = $('#results');
-    $('#form').on('submit', (evt) => {
+    $('form').on('submit', (evt) => {
+      // prevents form from submitting in browser
+      evt.preventDefault();
 
-        $.getJSON('scripts/soaps.json').done((results) => {
-            let html = Handlebars.compile(template)(results);
-            resultDiv.html(html);
-        })
-        .fail((err) => {
-            console.log('Error fetching results:', error);
-        });
-        evt.preventDefault();
+      const urlBase = $(location).attr('href');
+      const formData = $('form').serializeArray();
+
+      $.ajax({
+        type:'POST',
+        url: urlBase,
+        data: formData
+      })
+      .done(response => {
+        // TODO Add in view update logic
+        console.log('AJAX response', response)
+        let html = Handlebars.compile(template)(response.data);
+        resultDiv.html(html);
+      })
+      .fail(error => console.log('AJAX error', error));
     });
 };
 
 products.search();
+});
