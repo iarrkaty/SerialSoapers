@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel ="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="scripts/style/style.css">
 <title> Serial Soapers </title>
 </head>
 <div id="header">
@@ -10,10 +10,9 @@
 </div>
 <div id="navbar">
   <ul>
-    <li><a href="about">About Us</a></li>
-    <li><a href="faq">FAQ</a></li>
-    <li><a href="products">Products</a></li>
-    <li><a href="locations">Find Us</a></li>
+    <li>About Us</li>
+    <li>FAQ</li>
+    <li>Find Us</li>
   </ul>
 </div>
 <body>
@@ -33,9 +32,10 @@
   </div>
   <script id="results-template" type="text/x-handlebars-template">
     {{#each this}}
-      <div>{{scent}}</div>
+      <div><h2>{{scent}}</h2></div>
       <div>{{colors}}</div>
       <div>{{description}}</div>
+      <img class="productImage" src="/img/{{img}}" alt="{{description}}">
     {{/each}}
   </script>
 
@@ -44,5 +44,5 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script type="text/javascript" src="/products.js"></script>
+<script type="text/javascript" src="scripts/products.js"></script>
 </html>
